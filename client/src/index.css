@@ -1,0 +1,493 @@
+/* FONTS - MUST BE ABOVE TAILWIND */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap");
+
+/* TAILWIND IMPORTS */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BASE STYLES */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* DEFAULT ROOT VARIABLES */
+
+:root {
+  /* Primary Colors */
+  --color-primary: #d4745c;
+  --color-primary-dark: #c0624a;
+  --color-secondary: #7c9885;
+  --color-accent: #f4a261;
+  /* Backgrounds */
+  --color-background: #fff9f5;
+  --color-surface: #fff4ee;
+  --color-card: #ffffff;
+  /* Text */
+  --color-text: #5a4a42;
+  --color-text-light: #9b8b82;
+  /* Borders */
+  --color-border: #f5e6e0;
+  /* Status Colors */
+  --color-success: #7c9885;
+  --color-error: #e76f51;
+  --color-warning: #f4a261;
+  --color-info: #8aadb8;
+  /* Typography */
+  --font-heading: "Plus Jakarta Sans", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  /* Spacing */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(212, 116, 92, 0.1);
+  --shadow-md: 0 4px 12px rgba(212, 116, 92, 0.15);
+  --shadow-lg: 0 8px 24px rgba(212, 116, 92, 0.2);
+  --shadow-xl: 0 16px 32px rgba(212, 116, 92, 0.25);
+}
+
+/* ============================================ */
+
+/* ============================================ */
+
+/* THEME 1: LAVENDER LIGHT (Soft Lavender + White) */
+
+/* ============================================ */
+
+.theme-lavender {
+  /* Primary Colors */
+  --color-primary: #b19cd9;
+  --color-primary-dark: #967ac3;
+  --color-secondary: #e6e6fa;
+  --color-accent: #ffb7b2;
+  /* Backgrounds */
+  --color-background: #fdfbff;
+  --color-surface: #f8f5fc;
+  --color-card: #ffffff;
+  /* Text */
+  --color-text: #4a4059;
+  --color-text-light: #8e849e;
+  /* Borders */
+  --color-border: #efe6fd;
+  /* Status Colors */
+  --color-success: #98d8aa;
+  --color-error: #ff9b9b;
+  --color-warning: #ffd966;
+  --color-info: #a0c4ff;
+  /* Typography */
+  --font-heading: "Plus Jakarta Sans", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  /* Spacing */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(177, 156, 217, 0.1);
+  --shadow-md: 0 4px 12px rgba(177, 156, 217, 0.15);
+  --shadow-lg: 0 8px 24px rgba(177, 156, 217, 0.2);
+  --shadow-xl: 0 16px 32px rgba(177, 156, 217, 0.25);
+}
+
+/* ============================================ */
+
+/* THEME 2: SOFT & FRIENDLY (Terracotta + Soft Green) - DEFAULT */
+
+/* ============================================ */
+
+.theme-friendly {
+  /* Primary Colors - Warm Terracotta + Soft Green */
+  --color-primary: #d4745c;
+  --color-primary-dark: #c0624a;
+  --color-secondary: #7c9885;
+  --color-accent: #f4a261;
+  /* Backgrounds - Warm Cream Tones */
+  --color-background: #fff9f5;
+  --color-surface: #fff4ee;
+  --color-card: #ffffff;
+  /* Text - Warm Browns */
+  --color-text: #5a4a42;
+  --color-text-light: #9b8b82;
+  /* Borders - Soft Peach */
+  --color-border: #f5e6e0;
+  /* Status Colors */
+  --color-success: #7c9885;
+  --color-error: #e76f51;
+  --color-warning: #f4a261;
+  --color-info: #8aadb8;
+  /* Typography - Rounded, Friendly */
+  --font-heading: "Plus Jakarta Sans", "DM Sans", -apple-system, sans-serif;
+  --font-body: "DM Sans", -apple-system, sans-serif;
+  /* Spacing - More Rounded */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  /* Shadows - Soft, Warm */
+  --shadow-sm: 0 2px 8px rgba(212, 116, 92, 0.08);
+  --shadow-md: 0 4px 12px rgba(212, 116, 92, 0.12);
+  --shadow-lg: 0 8px 24px rgba(212, 116, 92, 0.15);
+  --shadow-xl: 0 16px 32px rgba(212, 116, 92, 0.18);
+}
+
+/* ============================================ */
+
+/* THEME 3: BOLD MODERN (Vibrant Purple/Pink) */
+
+/* ============================================ */
+
+.theme-bold {
+  /* Primary Colors - Bold & Vibrant */
+  --color-primary: #6c5ce7;
+  --color-primary-dark: #5849c7;
+  --color-secondary: #ff6b9d;
+  --color-accent: #ffa502;
+  /* Backgrounds - Cool Grays */
+  --color-background: #f8f9fa;
+  --color-surface: #f1f3f5;
+  --color-card: #ffffff;
+  /* Text - Deep Blue-Black */
+  --color-text: #0a0e27;
+  --color-text-light: #6c757d;
+  /* Borders - Cool Gray */
+  --color-border: #dee2e6;
+  /* Status Colors */
+  --color-success: #00d9a3;
+  --color-error: #ff3838;
+  --color-warning: #ffa502;
+  --color-info: #4d9fff;
+  /* Typography - Bold, Geometric */
+  --font-heading: "Poppins", "Manrope", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  /* Spacing - Sharp */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  /* Shadows - Colored */
+  --shadow-sm: 0 2px 8px rgba(108, 92, 231, 0.1);
+  --shadow-md: 0 4px 16px rgba(108, 92, 231, 0.15);
+  --shadow-lg: 0 8px 24px rgba(108, 92, 231, 0.2);
+  --shadow-xl: 0 16px 40px rgba(108, 92, 231, 0.25);
+}
+
+/* ============================================ */
+
+/* THEME 4: GLASSMORPHISM (Gradient + Frosted Glass) */
+
+/* ============================================ */
+
+/* ============================================ */
+
+/* THEME 4: ROYAL LAVENDER (Deep Purple + Gold Accents) */
+
+/* ============================================ */
+
+.theme-royal {
+  /* Primary Colors - Rich & Regal */
+  --color-primary: #6a4c93;
+  --color-primary-dark: #553c7b;
+  --color-secondary: #b590e8;
+  --color-accent: #ffd700;
+  /* Backgrounds - Slightly darker, premium feel */
+  --color-background: #f4f1fa;
+  --color-surface: #ebe5f5;
+  --color-card: #ffffff;
+  /* Text */
+  --color-text: #2d2438;
+  --color-text-light: #6d6478;
+  /* Borders */
+  --color-border: #dbcdee;
+  /* Status Colors */
+  --color-success: #06d6a0;
+  --color-error: #ef476f;
+  --color-warning: #ffd166;
+  --color-info: #118ab2;
+  /* Typography */
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  /* Spacing */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  /* Shadows - Sharp & Defined */
+  --shadow-sm: 0 2px 4px rgba(106, 76, 147, 0.05);
+  --shadow-md: 0 6px 12px rgba(106, 76, 147, 0.1);
+  --shadow-lg: 0 12px 24px rgba(106, 76, 147, 0.15);
+  --shadow-xl: 0 20px 40px rgba(106, 76, 147, 0.2);
+}
+
+/* ============================================ */
+
+/* APPLY THEME VARIABLES TO BODY */
+
+/* ============================================ */
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+/* ============================================ */
+
+/* GLASSMORPHISM SPECIFIC STYLES */
+
+/* ============================================ */
+
+.theme-glass {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.theme-glass .glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.theme-glass .glass-nav {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================ */
+
+/* SMOOTH THEME TRANSITIONS */
+
+/* ============================================ */
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Disable transitions for theme switching */
+
+.theme-switching * {
+  transition: none !important;
+}
+
+/* ============================================ */
+
+/* THEME-SPECIFIC ANIMATION TIMING */
+
+/* ============================================ */
+
+/* ============================================ */
+
+/* THEME-SPECIFIC ANIMATION TIMING */
+
+/* ============================================ */
+
+.theme-friendly * {
+  transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.theme-bold * {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.2s;
+}
+
+.theme-lavender * {
+  transition-timing-function: ease-in-out;
+}
+
+.theme-royal * {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ============================================ */
+
+/* SCROLLBAR STYLING */
+
+/* ============================================ */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
+
+/* ============================================ */
+
+/* SELECTION STYLING */
+
+/* ============================================ */
+
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+::-moz-selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* ============================================ */
+
+/* FOCUS STYLES */
+
+/* ============================================ */
+
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ============================================ */
+
+/* UTILITY CLASSES */
+
+/* ============================================ */
+
+.bg-gradient-primary {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-primary-dark) 100%
+  );
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(
+    135deg,
+    var(--color-secondary) 0%,
+    var(--color-accent) 100%
+  );
+}
+
+.text-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================ */
+
+/* ANIMATION KEYFRAMES */
+
+/* ============================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ============================================ */
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* ============================================ */
+
+@media (max-width: 640px) {
+  :root {
+    --radius-sm: 10px;
+    --radius-md: 14px;
+    --radius-lg: 18px;
+    --radius-xl: 22px;
+  }
+}
+
+/* ============================================ */
+
+/* PRINT STYLES */
+
+/* ============================================ */
+
+@media print {
+  * {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+}
